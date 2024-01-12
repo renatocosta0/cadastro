@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venda seu telefone</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h3>Cadastre seu telefone para vender mais rápido!</h3>
+    </div>
+    <div class="form-container">
+      <div class="form-header">
+        <p>Formulário</p>
+      </div>
+      <div class="form-body">
+        <h1 class="form-title">
+          Venda fácil seu telefone!
+        </h1>
+        <p>Descreva as características e marque os opcionais que ele possui</p>
+        <form action="">
+          <div class="box-input">
+            <label for="title">Título do anúncio <span class="required-field">*</span></label>
+            <input type="text" name="title" id="title" class="block"
+              placeholder="Um título para anunciar o seu Telefone" minlength="1" maxlength="30" required>
+          </div>
+          <div class="box-input">
+            <label for="price">Preço <span class="required-field">*</span></label>
+            <input type="number" name="price" id="price" class="block" placeholder="Defina o preço" required>
+          </div>
+          <div class="box-input">
+            <label for="description">Descrição <span class="required-field">*</span></label>
+            <textarea name="description" id="description" class="block"
+              placeholder="Aqui você coloca os detalhes do telefone, por exemplo: se ele tem algum arranhão"></textarea>
+          </div>
+          <div class="box-input">
+            <label for="brand">Marca <span class="required-field">*</span></label>
+            <input type="text" name="brand" id="brand" class="block" placeholder="Digite a marca do telefone"
+              required />
+          </div>
+          <div class="box-input">
+            <label for="model">Modelo <span class="required-field">*</span></label>
+            <input type="text" name="model" id="model" class="block" placeholder="Digite o modelo do telefone"
+              required />
+          </div>
+          <div class="box-input">
+            <label for="bateira">Estado da Bateria <span class="required-field">*</span></label>
+            <select name="bateira">
+              <option value="programador">Bom</option>
+              <option value="tester">Mais ou menos</option>
+              <option value="devops">Mau</option>
+            </select>
+          </div>
+          <div class="box-input">
+            <label for="purchase_date">Data de compra <span class="required-field">*</span></label>
+            <input type="date" name="purchase_date" id="purchase_date" class="block" required />
+          </div>
+          <div class="box-input">
+            <p>Comprado na: <span class="required-field">*</span></p>
+            <input type="radio" id="loja" />
+            <label for="loja" class="rad">Loja</label>
+            <input type="radio" id="revenda" />
+            <label for="revenda" class="rad">Revenda</label>
+          </div>
+          <div class="optional-box">
+            <p>Opcionais</p>
+            <ul class="optional-list">
+              <li>
+                <input type="checkbox" id="capa" name="optional[]" value="capa" />
+                <label for="capa">Capa</label>
+              </li>
+              <li>
+                <input type="checkbox" id="carregador" name="optional[]" value="carregador" />
+                <label for="carregador">Carregador</label>
+              </li>
+            </ul>
+          </div>
+          <div class="optional-box">
+            <ul class="optional-list">
+              <li>
+                <input type="checkbox" id="auricular" name="optional[]" value="auricular" />
+                <label for="auricular">Auricular</label>
+              </li>
+              <li>
+                <input type="checkbox" id="carregador" name="optional[]" value="carregador" />
+                <label for="capa">Adaptador</label>
+              </li>
+            </ul>
+          </div>
+          <div class="box-input">
+            <p>Fotos do telefone: <span class="required-field">*</span></p>
+            <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required />
+          </div>
+
+          <input type="submit" value="Enviar" class="btn-submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
